@@ -119,7 +119,7 @@ namespace Gitea.Model
         /// Gets or Sets DueDate
         /// </summary>
         [DataMember(Name="due_date", EmitDefaultValue=false)]
-        public DateTime DueDate { get; set; }
+        public DateTime? DueDate { get; set; }
 
         /// <summary>
         /// Gets or Sets HtmlUrl

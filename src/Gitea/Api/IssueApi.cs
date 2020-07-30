@@ -8777,8 +8777,8 @@ namespace Gitea.Api
             if (owner != null) localVarPathParams.Add("owner", this.Configuration.ApiClient.ParameterToString(owner)); // path parameter
             if (repo != null) localVarPathParams.Add("repo", this.Configuration.ApiClient.ParameterToString(repo)); // path parameter
             if (index != null) localVarPathParams.Add("index", this.Configuration.ApiClient.ParameterToString(index)); // path parameter
-            if (since != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "since", since)); // query parameter
-            if (before != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "before", before)); // query parameter
+            if (since != default(DateTime)) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "since", since)); // query parameter
+            if (before != default(DateTime)) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "before", before)); // query parameter
 
             // authentication (AccessToken) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("access_token")))
