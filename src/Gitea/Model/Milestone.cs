@@ -55,7 +55,7 @@ namespace Gitea.Model
         /// Gets or Sets ClosedAt
         /// </summary>
         [DataMember(Name="closed_at", EmitDefaultValue=false)]
-        public DateTime ClosedAt { get; set; }
+        public DateTime? ClosedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets ClosedIssues
@@ -73,7 +73,7 @@ namespace Gitea.Model
         /// Gets or Sets DueOn
         /// </summary>
         [DataMember(Name="due_on", EmitDefaultValue=false)]
-        public DateTime DueOn { get; set; }
+        public DateTime? DueOn { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
